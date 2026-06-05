@@ -34,6 +34,8 @@ USO de IA: Gemini para corrección de ajustes visuales al cargar imágenes.
 Prompt: Ayudame a ajustar visualmente la imagen logo_vidaplena_spa.png en el área de navegación como logo visible para el header.
 Prompt: Corrige error visual del area de bienestar al momento de cargar imagen, desde la dirección de archivo img/
 
+Git y GitHub para control de versiones
+
 Organización de Archivos
 El proyecto sigue una estructura de directorios limpia y ordenada para separar el contenido, los estilos y los recursos gráficos:
 
