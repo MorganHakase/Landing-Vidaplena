@@ -3,50 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primer proyecto</title>
+    <title>VidaPlena SpA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Menú -->
-    <nav>
-        <h2> VidaPlena SpA</h2>
-        <ul>
-            <li>Servicios</li>
-            <li>Sobre Nosotros</li>
-            <li>Programas de Bienestar</li>
-            <li>Contacto</li>
-            <li>Programas de Bienestar</li>
-        </ul>
 
-    </nav>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">VidaPlena SpA</div>
+        <nav class="navegacion">
+            <!-- href = referencia hipertexto -->
+            <a href="#hero">Inicio</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
-    <!-- Bienvenidos -->
-    <section class="bienvenidos">
-        <h1>Tu bienestar integral comienza aquí</h1>
-        <p>Descubre un espacio diseñado para nutrir tu mente, cuerpo y espíritu. En VidaPlena SpA, te acompañamos en tu camino hacia una vida más consciente y serena.</p>
-        <button onclick="saludar()"> Haz clic </button>
+    <!-- SECCIÓN HERO -->
+    <section id="hero" class="hero">
+        <div class="hero-texto">
+            <h1>Tu bienestar integral comienza aquí</h1>
+            <p>Descubre un espacio diseñado para nutrir tu mente, cuerpo y espíritu.</p>
+            <a href="#contacto" class="btn">Reserva tu Sesión</a>
+        </div>
+        <div class="hero-imagen">
+            <img src="frames-for-your-heart-3jztLhBPrUo-unsplash.jpg" alt="Imagen de Bienestar Integral">
+        </div>
     </section>
 
-    <!-- Tarjetas -->
-    <section class="tarjeta">
-        <div class="card"> HTML</div>
-        <div class="card"> CSS</div>
-        <div class="card"> JavaScript</div>
+    <!-- SECCIÓN BENEFICIOS  -->
+    <section id="beneficios" class="seccion-central">
+        <h2>Nuestros Servicios y Beneficios</h2>
+        <div class="contenedor-tarjetas">
+            <div class="tarjeta">
+                <div class="icono"></div>
+                <h3>Yoga Consciente</h3>
+                <p>Clases personalizadas para mejorar tu flexibilidad y paz mental.</p>
+            </div>
+            <div class="tarjeta">
+                <div class="icono"></div>
+                <h3>Meditación Guiada</h3>
+                <p>Espacios de silencio para calmar el ruido mental y conectar contigo.</p>
+            </div>
+            <div class="tarjeta">
+                <div class="icono"></div>
+                <h3>Nutrición Consciente</h3>
+                <p>Planes de alimentación para nutrir tu cuerpo y elevar tu energía.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Formulario -->
-    <section>
-        <h2>Contacto</h2>
-        <form>
-            <input type="text" placeholder="Nombre">
-            <input type="correo" placeholder="Email">
-            <button>Enviar</button>
+    <!-- SECCIÓN TESTIMONIOS -->
+    <section id="testimonios" class="seccion-central fondo-claro">
+        <h2>Testimonios</h2>
+        <div class="contenedor-tarjetas">
+            <div class="tarjeta">
+                <p>"El programa me devolvió la energía que pensé que había perdido para siempre. Es una inversión en mí misma."</p>
+                <br>
+                <strong>- Carla M.</strong>
+            </div>
+            <div class="tarjeta">
+                <p>"VidaPlena es mi santuario personal. El yoga aquí no es solo físico, es una conexión espiritual."</p>
+                <br>
+                <strong>- Sofía P.</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contacto-info">
+            <h2>Comienza hoy mismo</h2>
+            <p>¿Tienes dudas? Déjanos tus datos y un especialista se pondrá en contacto contigo a la brevedad.</p>
+        </div>
+        
+        <!-- Formulario -->
+        <form class="formulario">
+            <input type="text" placeholder="Tu Nombre Completo">
+            <input type="email" placeholder="Tu Correo Electrónico">
+            <textarea placeholder="Déjanos tu mensaje..." rows="5"></textarea>
+            <button type="submit" class="btn">Enviar Mensaje</button>
         </form>
     </section>
 
-    <!-- Pie de página -->
-    <footer>
-    <p>Sitio creado por estudiantes</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-info">
+            <p> Av Gabriela Mistral, Los Ángeles, Chile | +56 9 1234 5678 | contacto@vidaplena.cl</p>
+            <p>Síguenos en: <a href="#">Instagram</a> | <a href="#">Facebook</a>
+        </div>
+        <p class="copyright">© 2021 VidaPlena SpA. Todos los derechos reservados.</p>
     </footer>
 
 </body>

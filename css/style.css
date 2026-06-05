@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /* Tipografía básica del sistema */
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* ================= CLASES GENERALES ================= */
+/* Estilo para los botones */
+.btn {
+    background-color: var(--color-verde);
+    color: var(--color-blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background-color: var(--color-blanco);
+    display: flex;
+    justify-content: space-between; /* Separa el logo del menú */
+    align-items: center;
+    padding: 20px 50px;
+    position: sticky; /* Hace que el menú persiga a la pantalla al bajar */
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-verde);
+}
+
+.navegacion a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+/* ================= HERO ================= */
+.hero {
+    display: flex;
+    padding: 60px 50px;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-texto {
+    flex: 1; /* Toma la mitad de la pantalla */
+}
+
+.hero-texto h1 {
+    font-size: 2.5rem;
+    color: var(--color-verde);
+    margin-bottom: 20px;
+}
+
+.hero-imagen {
+    flex: 1; /* Toma la otra mitad */
+    background-color: #E0E0E0;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #999;
+}
+
+/* ================= BENEFICIOS Y TESTIMONIOS ================= */
+.seccion-central {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.fondo-claro {
+    background-color: #F0F4F2; /* Un fondo ligeramente gris/verde para separar secciones */
+}
+
+.seccion-central h2 {
+    color: var(--color-verde);
+    margin-bottom: 40px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.icono {
+    color: var(--color-verde);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ================= CONTACTO ================= */
+.contacto {
+    display: flex;
+    padding: 60px 50px;
+    background-color: var(--color-verde); /* Fondo verde del mockup */
+    color: var(--color-blanco);
+    gap: 40px;
+}
+
+.contacto-info {
+    flex: 1;
+}
+
+.contacto-info h2 {
+    margin-bottom: 20px;
+    color: var(--color-blanco);
+}
+
+.formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Apila los campos hacia abajo */
+    gap: 15px;
+    background-color: var(--color-blanco);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Da estilo a las cajas de texto del formulario */
+.formulario input, .formulario textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: var(--color-blanco);
+    padding: 40px 50px;
+    text-align: center;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+}
+
+.footer-info a {
+    color: var(--color-verde);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
