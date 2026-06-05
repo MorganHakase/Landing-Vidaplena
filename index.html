@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VidaPlena SpA</title>
+    <!-- Ruta corregida hacia la carpeta css -->
     <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
     <!-- HEADER -->
     <header class="header">
-        <div class="logo">VidaPlena SpA</div>
+        <!-- 1. IMAGEN DEL LOGO EN LA BARRA DE NAVEGACIÓN -->
+        <img src="img/logo_vidaplena_spa.png" alt="Logo VidaPlena SpA" class="logo-nav">
+        
         <nav class="navegacion">
-            <!-- href = referencia hipertexto -->
             <a href="#hero">Inicio</a>
             <a href="#beneficios">Beneficios</a>
             <a href="#testimonios">Testimonios</a>
@@ -27,13 +30,20 @@
             <a href="#contacto" class="btn">Reserva tu Sesión</a>
         </div>
         <div class="hero-imagen">
-            <img src="frames-for-your-heart-3jztLhBPrUo-unsplash.jpg" alt="Imagen de Bienestar Integral">
+            <!-- 2. IMAGEN EN LA SECCIÓN HERO -->
+            <img src="img/frames-for-your-heart-3jztLhBPrUo-unsplash.jpg" alt="Imagen de Bienestar Integral" class="img-hero">
         </div>
     </section>
 
-    <!-- SECCIÓN BENEFICIOS  -->
+    <!-- SECCIÓN BENEFICIOS (BIENESTAR)  -->
     <section id="beneficios" class="seccion-central">
         <h2>Nuestros Servicios y Beneficios</h2>
+        
+        <!-- 3. IMAGEN EN EL ÁREA DE BIENESTAR -->
+        <div class="imagen-bienestar-contenedor">
+            <img src="img/darya-luganskaya-z1aK63blmcU-unsplash.jpg" alt="Área de Bienestar" class="img-bienestar">
+        </div>
+
         <div class="contenedor-tarjetas">
             <div class="tarjeta">
                 <div class="icono"></div>
@@ -82,7 +92,7 @@
             <input type="text" placeholder="Tu Nombre Completo">
             <input type="email" placeholder="Tu Correo Electrónico">
             <textarea placeholder="Déjanos tu mensaje..." rows="5"></textarea>
-            <button type="submit" class="btn">Enviar Mensaje</button>
+            <button type="button" class="btn">Enviar Mensaje</button>
         </form>
     </section>
 

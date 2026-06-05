@@ -226,3 +226,33 @@ body {
     font-size: 0.9rem;
     color: #888;
 }
+
+/* ================= AJUSTES DE LAS IMÁGENES ================= */
+
+/* 1. Logo en la barra de navegación */
+.logo-nav {
+    height: 45px; /* Controla qué tan alto se ve el logo */
+    width: auto;
+}
+
+/* 2. Imagen en la sección Hero */
+.img-hero {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 3. Imagen en la sección Bienestar */
+.imagen-bienestar-contenedor {
+    margin-bottom: 40px; /* Separa la imagen de las tarjetas de abajo */
+}
+
+.img-bienestar {
+    max-width: 800px; /* Evita que se haga gigante en pantallas grandes */
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Recorta la imagen bonito sin deformarla */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
